@@ -6,6 +6,12 @@
     <title>Redirecting...</title>
 </head>
 <body>
+    <script>
+        // Check if user is authenticated
+        if (localStorage.getItem('authenticated') !== 'true') {
+            window.location.replace('login.html');
+        }
+    </script>
     <p>Redirecting to login page...</p>
 </body>
 </html>

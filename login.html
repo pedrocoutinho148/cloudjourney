@@ -89,17 +89,17 @@
     <script>
         // Check if user is already authenticated
         if (localStorage.getItem('authenticated') === 'true') {
-            window.location.replace('main.html');
+            window.location.replace('index.html');
         }
 
         function validateLogin(event) {
             event.preventDefault();
             const password = document.getElementById('password').value;
-            const correctPassword = 'ccoe'; // Change this to your desired password
+            const correctPassword = 'your-secure-password'; // Change this to your desired password
 
             if (password === correctPassword) {
                 localStorage.setItem('authenticated', 'true');
-                window.location.replace('main.html');
+                window.location.replace('index.html');
             } else {
                 document.getElementById('errorMessage').style.display = 'block';
                 document.getElementById('password').value = '';

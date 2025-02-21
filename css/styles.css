@@ -555,3 +555,67 @@ body {
 .cloud-provider:hover {
     text-decoration: underline;
 }
+
+/* Owner indicators */
+.owner-workload {
+    border-left: 3px solid #4CAF50;  /* Green for Workload Team */
+    padding-left: 10px;
+}
+
+.owner-architect {
+    border-left: 3px solid #2196F3;  /* Blue for Cloud Architect */
+    padding-left: 10px;
+}
+
+.owner-security {
+    border-left: 3px solid #FFC107;  /* Yellow for Security Team */
+    padding-left: 10px;
+}
+
+.owner-business {
+    border-left: 3px solid #9C27B0;  /* Purple for Business Sponsor */
+    padding-left: 10px;
+}
+
+/* Legend styles */
+.ownership-legend {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: var(--card-shadow);
+    margin: 1rem auto;
+    max-width: 800px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.legend-color {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+}
+
+.legend-workload { background-color: #4CAF50; }
+.legend-architect { background-color: #2196F3; }
+.legend-security { background-color: #FFC107; }
+.legend-business { background-color: #9C27B0; }
+
+/* Hide any potential close buttons or × symbols */
+.close-btn,
+.modal .close,
+[class*="close"],
+.times {
+    display: none !important;
+}
+
+/* If it's a text node, we can try hiding specific content */
+*:contains('×') {
+    display: none;
+}

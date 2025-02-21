@@ -52,24 +52,24 @@
                     <div class="phase-header">
                         <div class="phase-number">1</div>
                         <h2>Demand</h2>
-                        <span class="estimated-time" data-tooltip="Typical duration for this phase">2-3 weeks</span>
+                        <span class="estimated-time">2-3 weeks</span>
                     </div>
                     <div class="phase-content">
                         <p class="phase-description">Initial assessment</p>
                         <ul class="phase-steps">
-                            <li data-tooltip="Start here to initiate your cloud journey">
+                            <li class="owner-workload">
                                 <i class="fas fa-file-alt"></i>
                                 Submit cloud request
                             </li>
-                            <li data-tooltip="Review with cloud architects">
+                            <li class="owner-architect">
                                 <i class="fas fa-project-diagram"></i>
                                 Initial architecture review
                             </li>
-                            <li data-tooltip="Detailed cost analysis">
+                            <li class="owner-architect">
                                 <i class="fas fa-calculator"></i>
                                 Cost estimation
                             </li>
-                            <li data-tooltip="Final business approval">
+                            <li class="owner-business">
                                 <i class="fas fa-check-circle"></i>
                                 Business case approval
                             </li>
@@ -106,19 +106,19 @@
                     <div class="phase-content">
                         <p class="phase-description">Technical setup and configuration</p>
                         <ul class="phase-steps">
-                            <li data-tooltip="Set up cloud accounts">
+                            <li class="owner-architect">
                                 <i class="fas fa-user-plus"></i>
                                 Account creation
                             </li>
-                            <li data-tooltip="Configure network settings">
+                            <li class="owner-architect">
                                 <i class="fas fa-network-wired"></i>
                                 Network configuration
                             </li>
-                            <li data-tooltip="Implement security controls">
+                            <li class="owner-security">
                                 <i class="fas fa-shield-alt"></i>
                                 Security baseline setup
                             </li>
-                            <li data-tooltip="Set up IAM and permissions">
+                            <li class="owner-security">
                                 <i class="fas fa-key"></i>
                                 Access management
                             </li>
@@ -155,19 +155,19 @@
                     <div class="phase-content">
                         <p class="phase-description">Security and compliance verification</p>
                         <ul class="phase-steps">
-                            <li data-tooltip="Security review">
+                            <li class="owner-security">
                                 <i class="fas fa-lock"></i>
                                 Security assessment
                             </li>
-                            <li data-tooltip="Compliance verification">
+                            <li class="owner-security">
                                 <i class="fas fa-check-double"></i>
                                 Compliance check
                             </li>
-                            <li data-tooltip="Load and stress testing">
+                            <li class="owner-workload">
                                 <i class="fas fa-tachometer-alt"></i>
                                 Performance testing
                             </li>
-                            <li data-tooltip="Final validation">
+                            <li class="owner-security">
                                 <i class="fas fa-flag-checkered"></i>
                                 Final approval
                             </li>
@@ -202,19 +202,19 @@
                     <div class="phase-content">
                         <p class="phase-description">Operational excellence</p>
                         <ul class="phase-steps">
-                            <li data-tooltip="Set up monitoring tools">
+                            <li class="owner-workload">
                                 <i class="fas fa-desktop"></i>
                                 Monitoring setup
                             </li>
-                            <li data-tooltip="Configure backup solutions">
+                            <li class="owner-workload">
                                 <i class="fas fa-database"></i>
                                 Backup configuration
                             </li>
-                            <li data-tooltip="Create documentation">
+                            <li class="owner-workload">
                                 <i class="fas fa-file-alt"></i>
                                 Documentation
                             </li>
-                            <li data-tooltip="Transfer to operations team">
+                            <li class="owner-architect">
                                 <i class="fas fa-people-arrows"></i>
                                 Support handover
                             </li>
@@ -249,6 +249,25 @@
             </div>
         </div>
     </main>
+
+    <div class="ownership-legend">
+        <div class="legend-item">
+            <div class="legend-color legend-workload"></div>
+            <span>Workload Team</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color legend-architect"></div>
+            <span>Cloud Architect</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color legend-security"></div>
+            <span>Security Team</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color legend-business"></div>
+            <span>Business Owner</span>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="footer-content">

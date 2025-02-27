@@ -40,9 +40,9 @@
                 <div class="progress-line"></div>
                 <div class="progress-steps">
                     <div class="progress-step active" data-phase="demand">1</div>
-                    <div class="progress-step" data-phase="onboarding">2</div>
-                    <div class="progress-step" data-phase="validation">3</div>
-                    <div class="progress-step" data-phase="running">4</div>
+                    <div class="progress-step" data-phase="onboard">2</div>
+                    <div class="progress-step" data-phase="golive">3</div>
+                    <div class="progress-step" data-phase="run">4</div>
                 </div>
             </div>
 
@@ -57,217 +57,144 @@
                     <div class="phase-content">
                         <p class="phase-description">Initial assessment</p>
                         <ul class="phase-steps">
-                            <li class="owner-workload">
+                            <li>
                                 <i class="fas fa-file-alt"></i>
                                 Submit cloud request
                             </li>
-                            <li class="owner-architect">
+                            <li>
                                 <i class="fas fa-project-diagram"></i>
                                 Initial architecture review
                             </li>
-                            <li class="owner-architect">
+                            <li>
                                 <i class="fas fa-calculator"></i>
                                 Cost estimation
                             </li>
-                            <li class="owner-business">
+                            <li>
                                 <i class="fas fa-check-circle"></i>
                                 Business case approval
                             </li>
                         </ul>
-                        <div class="phase-resources">
-                            <h4>Resources</h4>
-                            <div class="resource-list">
-                                <a href="#" class="resource-link">
-                                    <i class="far fa-file-alt"></i>
-                                    Request Template
-                                </a>
-                                <a href="#" class="resource-link">
-                                    <i class="fas fa-calculator"></i>
-                                    Pricing Calculator
-                                </a>
-                            </div>
-                        </div>
-                        <div class="details-btn-container">
-                            <button class="details-btn" onclick="showPhaseDetails('demand')">
-                                View Details
-                                <i class="fas fa-chevron-right"></i>
-                            </button>
-                        </div>
+                        <button class="details-btn" data-phase="demand" type="button">
+                            View Details
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
                     </div>
                 </div>
 
-                <!-- Phase 2: Onboarding -->
-                <div class="phase-card" data-phase="onboarding">
+                <!-- Phase 2: Onboard -->
+                <div class="phase-card" data-phase="onboard">
                     <div class="phase-header">
                         <div class="phase-number">2</div>
-                        <h2>Onboarding</h2>
+                        <h2>Onboard</h2>
                         <span class="estimated-time">3-4 weeks</span>
                     </div>
                     <div class="phase-content">
                         <p class="phase-description">Technical setup and configuration</p>
                         <ul class="phase-steps">
-                            <li class="owner-architect">
+                            <li>
                                 <i class="fas fa-user-plus"></i>
                                 Account creation
                             </li>
-                            <li class="owner-architect">
+                            <li>
                                 <i class="fas fa-network-wired"></i>
                                 Network configuration
                             </li>
-                            <li class="owner-security">
+                            <li>
                                 <i class="fas fa-shield-alt"></i>
                                 Security baseline setup
                             </li>
-                            <li class="owner-security">
+                            <li>
                                 <i class="fas fa-key"></i>
                                 Access management
                             </li>
                         </ul>
-                        <div class="phase-resources">
-                            <h4>Resources</h4>
-                            <div class="resource-list">
-                                <a href="#" class="resource-link">
-                                    <i class="fas fa-shield-alt"></i>
-                                    Security Baseline Guide
-                                </a>
-                                <a href="#" class="resource-link">
-                                    <i class="fas fa-network-wired"></i>
-                                    Network Architecture Templates
-                                </a>
-                            </div>
-                        </div>
-                        <div class="details-btn-container">
-                            <button class="details-btn" onclick="showPhaseDetails('onboarding')">
-                                View Details
-                                <i class="fas fa-chevron-right"></i>
-                            </button>
-                        </div>
+                        <button class="details-btn" data-phase="onboard" type="button">
+                            View Details
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
                     </div>
                 </div>
 
-                <!-- Phase 3: Validation -->
-                <div class="phase-card" data-phase="validation">
+                <!-- Phase 3: Go-Live -->
+                <div class="phase-card" data-phase="golive">
                     <div class="phase-header">
                         <div class="phase-number">3</div>
-                        <h2>Validation</h2>
+                        <h2>Go-Live</h2>
                         <span class="estimated-time">2-3 weeks</span>
                     </div>
                     <div class="phase-content">
-                        <p class="phase-description">Security and compliance verification</p>
+                        <p class="phase-description">Security verification</p>
                         <ul class="phase-steps">
-                            <li class="owner-security">
+                            <li>
                                 <i class="fas fa-lock"></i>
                                 Security assessment
                             </li>
-                            <li class="owner-security">
+                            <li>
                                 <i class="fas fa-check-double"></i>
                                 Compliance check
                             </li>
-                            <li class="owner-workload">
+                            <li>
                                 <i class="fas fa-tachometer-alt"></i>
                                 Performance testing
                             </li>
-                            <li class="owner-security">
+                            <li>
                                 <i class="fas fa-flag-checkered"></i>
                                 Final approval
                             </li>
                         </ul>
-                        <div class="phase-resources">
-                            <h4>Resources</h4>
-                            <a href="#" class="resource-link">
-                                <i class="fas fa-clipboard-check"></i>
-                                Compliance Checklist
-                            </a>
-                            <a href="#" class="resource-link">
-                                <i class="fas fa-chart-line"></i>
-                                Performance Test Guidelines
-                            </a>
-                        </div>
-                        <div class="details-btn-container">
-                            <button class="details-btn" onclick="showPhaseDetails('validation')">
-                                View Details
-                                <i class="fas fa-chevron-right"></i>
-                            </button>
-                        </div>
+                        <button class="details-btn" data-phase="golive" type="button">
+                            View Details
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
                     </div>
                 </div>
 
-                <!-- Phase 4: Running -->
-                <div class="phase-card" data-phase="running">
+                <!-- Phase 4: Run -->
+                <div class="phase-card" data-phase="run">
                     <div class="phase-header">
                         <div class="phase-number">4</div>
-                        <h2>Running</h2>
+                        <h2>Run</h2>
                         <span class="estimated-time">Ongoing</span>
                     </div>
                     <div class="phase-content">
                         <p class="phase-description">Operational excellence</p>
                         <ul class="phase-steps">
-                            <li class="owner-workload">
+                            <li>
                                 <i class="fas fa-desktop"></i>
                                 Monitoring setup
                             </li>
-                            <li class="owner-workload">
+                            <li>
                                 <i class="fas fa-database"></i>
                                 Backup configuration
                             </li>
-                            <li class="owner-workload">
+                            <li>
                                 <i class="fas fa-file-alt"></i>
                                 Documentation
                             </li>
-                            <li class="owner-architect">
+                            <li>
                                 <i class="fas fa-people-arrows"></i>
                                 Support handover
                             </li>
                         </ul>
-                        <div class="phase-resources">
-                            <h4>Resources</h4>
-                            <a href="#" class="resource-link">
-                                <i class="fas fa-book-open"></i>
-                                Operations Playbook
-                            </a>
-                            <a href="#" class="resource-link">
-                                <i class="fas fa-tools"></i>
-                                Monitoring Best Practices
-                            </a>
-                        </div>
-                        <div class="details-btn-container">
-                            <button class="details-btn" onclick="showPhaseDetails('running')">
-                                View Details
-                                <i class="fas fa-chevron-right"></i>
-                            </button>
-                        </div>
+                        <button class="details-btn" data-phase="run" type="button">
+                            View Details
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Phase Details Modal -->
-        <div class="modal" id="phase-modal">
+        <div id="phase-modal" class="modal">
             <div class="modal-content">
-                <span class="close-btn">&times;</span>
-                <div id="modal-body"></div>
+                <button class="close-btn">&times;</button>
+                <div id="modal-body">
+                    <!-- Modal content will be inserted here -->
+                </div>
             </div>
         </div>
     </main>
-
-    <div class="ownership-legend">
-        <div class="legend-item">
-            <div class="legend-color legend-workload"></div>
-            <span>Workload Team</span>
-        </div>
-        <div class="legend-item">
-            <div class="legend-color legend-architect"></div>
-            <span>Cloud Architect</span>
-        </div>
-        <div class="legend-item">
-            <div class="legend-color legend-security"></div>
-            <span>Security Team</span>
-        </div>
-        <div class="legend-item">
-            <div class="legend-color legend-business"></div>
-            <span>Business Owner</span>
-        </div>
-    </div>
 
     <footer class="footer">
         <div class="footer-content">
